@@ -1,0 +1,52 @@
+<html>
+<table>
+<tr>
+<td>
+<div class="wpb_wrapper">
+			<center><class> Vote For the Pets Trailer</class><br>
+ <script type="text/javascript">
+    var clicks = 0;
+   var myCookie = getCookie("vote");
+    function onClick() {
+    if ( document.cookie.indexOf('vote=')== -1)
+{
+          clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+document.cookie = "vote=1; expires=Sat, 20 May 2017 00:00:00 EST;";
+    }
+    else {
+alert("You've voted already");
+    }
+    };
+    </script>
+    <button type="button" onclick="onClick()">Vote For Pets</button><br>
+<a id="clicks">0</a>  votes</center>
+
+		</div>
+</td>
+<td>
+
+<div class="wpb_wrapper">
+			<center><class> Vote For the Sticks and Stones Trailer</class><br>
+ <script type="text/javascript">
+    var clicks2 = 0;
+    function onClick2() {
+
+   if ( document.cookie.indexOf('vote=')== -1)
+{
+          clicks2 += 1;
+        document.getElementById("clicks2").innerHTML = clicks2;
+document.cookie = "vote=1; expires=Sat, 20 May 2017 00:00:00 EST;";
+    }
+    else {
+alert("You've voted already");
+    }
+    };
+          </script>
+    <button type="button" onclick="onClick2()">Vote For Sticks and Stones</button><br>
+<a id="clicks2">0</a>  votes</center>
+		</div>
+</td>
+</tr>
+</table>
+</html>
